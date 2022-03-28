@@ -17,7 +17,21 @@
 
     <script type="text/jsx">
       const app = document.getElementById("app");
-      ReactDOM.render(<h1>I am learning NEXT</h1>, app);
+
+      function Header() {
+        return (<h1>I am learning NEXT</h1>)
+      }
+
+      function Homepage () {
+        return (
+          <div>
+            Hello!
+            <Header />
+          </div>
+        )
+      }
+
+      ReactDOM.render(<Homepage />, app);
     </script>
   </body>
 </html>
